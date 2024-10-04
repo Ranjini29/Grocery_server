@@ -25,6 +25,7 @@ Session(server)
 
 # Initialize the Dash app with a Bootstrap theme
 app = dash.Dash(__name__, server=server, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP, '/assets/styles.css'])
+server=app.server
 
 #******************************************************************************************************** 
 
