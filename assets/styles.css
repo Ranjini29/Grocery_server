@@ -1,0 +1,165 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  background-color: #f1f1f1; /* Background of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Round edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when hovered */
+}
+
+.navbar {
+  z-index: 1;
+  border-bottom: 2px solid #01060a;
+  border-top: 2px solid #01060a;
+  padding: 5px 0;
+  position: relative; /* Ensure it doesn't interfere with flex container */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.word {
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: right;
+}
+
+.navbar .container h1 {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.navbar .container {
+  justify-content: flex-start;
+}
+
+label {
+  margin: 0;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+#dateLabel1, #dateLabel2 {
+  font-weight: bold;
+}
+
+/* Sidebar and Main Content Layout */
+.container-sidebar {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw; /* Ensure it fits the viewport width */
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.side-bar {
+  width: 200px;
+  background-color: #343a40;
+  color: #fff;
+  padding: 5px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  overflow-y: auto; /* Enable vertical scrollbar if content exceeds height */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.side-bar .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 1px;
+  padding: 1px 3px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.side-bar .nav-link:hover {
+  background-color: #495057;
+  text-decoration: none;
+}
+
+.side-bar .nav-link.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.sidebar-divider {
+  border-top: 2px solid #6c757d;
+  margin: 15px 0;
+}
+
+/* Main content styling */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin: 0;
+  box-sizing: border-box; /* Include padding and border in total width */
+  padding-bottom: 70px; /* Space for the footer */
+}
+
+
+/* Footer Styling */
+.app-footer {
+  background-color: #343a40;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+
+/* Custom scrollbar styling */
+.slicers-container ::-webkit-scrollbar {
+  width: 6px;  /* Reduce scrollbar width */
+  height: 6px; /* Reduce scrollbar height for horizontal scrolling (if applicable) */
+}
+
+.slicers-container ::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 10px;
+}
+
+.slicers-container ::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 2px solid #f1f1f1; /* Padding around scrollbar thumb */
+}
+
+.slicers-container ::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change color on hover */
+}
+.btn-back-to-parent {
+  display: block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.btn-back-to-parent:hover {
+  background-color: #0056b3;
+}
