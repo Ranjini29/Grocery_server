@@ -1,4 +1,5 @@
 Flask-Session==0.8.0
+sqlalchemy==2.0.35
 pyodbc==5.1.0
 dash==2.17.1
 pandas==2.2.2
